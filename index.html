@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de productos</title>
+    <script src="inventario.js"></script>
+</head>
+    <header>
+        <h1>CONTROL DE INVENTARIO</h1> 
+    </header>
+<body>
+
+    <div id="agregar">
+        <h2>Agregar producto</h2>
+        <form id="formulario_Agregar">
+            <input type="number" id="codigo" placeholder="Código del producto">
+            <input type="text" id="nombre" placeholder="Nombre del producto">
+            <input type="number" id="cantidad" placeholder="Cantidad del producto">
+            <input type="number"id="costo" placeholder="Costo del producto"><br><br>
+            <input type="button" value= "Agregar" id="btnAgregar">
+        </form>
+    </div>
+
+    <div id="busqueda">
+        <h2>Buscar</h2>
+        <form id="formulario_Busqueda">
+            <input type="number" id="busCodigo" placeholder="Código del producto"> <br><br>
+            <input type="button" value= "Buscar" id="btnBuscar">
+            <input type="button" value= "Listar" id="btnListar">
+            <input type="button" value= "ListarInverso" id="btnListarInverso">
+        </form>
+    </div>
+    <div id="eliminar">
+        <h2>Eliminar</h2>
+        <form id="formulario_Eliminar">
+            <input type="number" id="delCodigo" placeholder="Código del producto"><br><br>
+            <input type="button" value= "Eliminar" id="btnEliminar"><br><br>
+        </form>
+    </div>   
+</div>
+    <div>
+        <h1 id="text_listado">Listado de productos</h1>
+        <div id="listado">
+
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
